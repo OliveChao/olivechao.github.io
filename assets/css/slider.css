@@ -1,4 +1,5 @@
-.da-slider{
+.da-slider
+{
 	width: 100%;
 	height:350px;
 	position: relative;
@@ -11,7 +12,9 @@
 	text-align:center;
 	margin-top: 10em;
 }
-.da-slide{
+
+.da-slide
+{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -20,34 +23,48 @@
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
 }
-.da-slide-current{
+
+.da-slide-current
+{
 	z-index: 1000;
 }
-.da-slider-fb .da-slide{
+
+.da-slider-fb .da-slide
+{
 	left: 100%;
 }
-.da-slider-fb  .da-slide.da-slide-current{
+
+.da-slider-fb  .da-slide.da-slide-current
+{
 	left: 0px;
 }
+
 .da-slide h2,
 .da-slide p,
 .da-slide .da-link,
-.da-slide .da-img{
+.da-slide .da-img
+{
 	position: absolute;
 	opacity: 0;
 	left: 110%;
 }
+
 .da-slider-fb .da-slide h2,
 .da-slider-fb .da-slide p,
-.da-slider-fb .da-slide .da-link{
+.da-slider-fb .da-slide .da-link
+{
 	left: 10%;
 	opacity: 1;
 }
-.da-slider-fb .da-slide .da-img{
+
+.da-slider-fb .da-slide .da-img
+{
 	left: 60%;
 	opacity: 1;
 }
-.da-slide h2{
+
+.da-slide h2
+{
 	color:#281d24;
 	width: 77%;
 	top:0px;
@@ -60,7 +77,9 @@
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 }
-.da-slide p{
+
+.da-slide p
+{
 	top:110px;
 	color: #281d24;
 	font-size: 1.4em;
@@ -73,10 +92,14 @@
 	margin: 0 auto;
 	width: 77%;
 }
-.da-img{
+
+.da-img
+{
 	display:none;
 }
-.da-slide .da-img{
+
+.da-slide .da-img
+{
 	text-align: center;
 	width: 30%;
 	top: 51px;
@@ -84,7 +107,9 @@
 	line-height: 320px;
 	left: 110%; /*60%*/
 }
-.da-slide .da-link{
+
+.da-slide .da-link
+{
 	top:175px; /*depends on p height*/
 	font-family: 'Open Sans', sans-serif;
 	display:inline-block;
@@ -105,27 +130,36 @@
 	-moz-border-radius: 5px;
 	-o-border-radius:5px;	
 }
+
 .down-arrow
 {
 	width:50px;
 	margin: 0 auto;
 	padding: 3em 0em;
 }
-.down-arrow span{
+
+.down-arrow span
+{
 	background: url(../images/bwn.png);
 	width:48px;
 	height:48px;
 	display:block;
 }
- .da-link:hover{
+ 
+.da-link:hover
+{
  	background: #fff;
- 	color:#55C1E5;
- }
-.da-arrows{
+ 	color:#281d24;
+}
+
+.da-arrows
+{
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
-.da-arrows span{
+
+.da-arrows span
+{
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
@@ -139,36 +173,54 @@
 	-ms-transition: opacity 0.4s ease-in-out-out 0.1s;
 	transition: opacity 0.4s ease-in-out-out 0.1s;
 }
-.da-arrows-prev{
+
+.da-arrows-prev
+{
 	background: url(../images/sprite.png) no-repeat 0px 0px;
 }
-.da-arrows-next{
+
+.da-arrows-next
+{
 	background: url(../images/sprite.png) no-repeat -80px 0px;
 }
-.da-slider:hover .da-arrows span{
+
+.da-slider:hover .da-arrows span
+{
 	opacity: 1;
 }
-.da-arrows span.da-arrows-next:after{
+
+.da-arrows span.da-arrows-next:after
+{
 	background-position: top right;
 }
-.da-arrows span.da-arrows-prev{
+
+.da-arrows span.da-arrows-prev
+{
 	left: 15px;
 }
-.da-arrows span.da-arrows-next{
+
+.da-arrows span.da-arrows-next
+{
 	right: 15px;
 }
+
 .da-slide-current h2,
 .da-slide-current p,
-.da-slide-current .da-link{
+.da-slide-current .da-link
+{
 	left: 10%;
 	opacity: 1;
 }
-.da-slide-current .da-img{
+
+.da-slide-current .da-img
+{
 	left: 60%;
 	opacity: 1;
 }
+
 /***
-.da-dots{
+.da-dots
+{
 	width: 99%;
 	position: absolute;
 	text-align: center;
@@ -178,7 +230,8 @@
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
-.da-dots span{
+.da-dots span
+{
 	display: inline-block;
 	position: relative;
 	width: 15px;
@@ -191,7 +244,8 @@
 	-o-border-radius: 10px;
 	-moz-border-radius: 10px;
 }
-.da-dots span.da-dots-current:after{
+.da-dots span.da-dots-current:after
+{
 	content: '';
 	width: 15px;
 	height:15px;
@@ -206,30 +260,36 @@
 }**/
 /* Animation classes and animations */
 
-
 /* Slide in from the right*/
-.da-slide-fromright h2{
+.da-slide-fromright h2
+{
 	-webkit-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	-moz-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	-o-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	-ms-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 	animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 }
-.da-slide-fromright p{
+
+.da-slide-fromright p
+{
 	-webkit-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 	-moz-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 	-o-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 	-ms-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 	animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 }
-.da-slide-fromright .da-link{
+
+.da-slide-fromright .da-link
+{
 	-webkit-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 	-moz-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 	-o-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 	-ms-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 	animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 }
-.da-slide-fromright .da-img{
+
+.da-slide-fromright .da-img
+{
 	-webkit-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
 	-moz-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
 	-o-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
